@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://boberekszef.svpj.pl/urzad/rozporzadzenia -->
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Rozporządzeń</title>
+ <link rel="icon" href="https://boberekszef.svpj.pl/urzad/unknown.png" type="image/png">
+    <style>
+
+
+
+.navbar {
+    background-color: #007BFF;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #444;
+        }
+        textarea {
+            width: 96%;
+            height: 200px;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        label {
+            margin-top: 15px;
+            font-weight: bold;
+            display: block;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #notification {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: translateY(-20px);
+}
+
+.notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+		
+    </style>
+</head>
+<body>
+<!-- Pasek nawigacyjny, ten co na gorzze zakladki sa -->
+<div class="navbar">
+    <a href="https://boberekszef.svpj.pl/urzad/index.html">Listy</a>
+    <a href="https://boberekszef.svpj.pl/urzad/rozporzadzenia.html">Rozporządzenia</a>
+    <a href="https://boberekszef.svpj.pl/urzad/cweldiscord.html">Discord</a>
+    <a href="https://boberekszef.svpj.pl/urzad/strona4.html">Brak</a>
+      <a href="https://admin.serverproject.eu/service/109083" target="_blank">
+       Admin</a>
+</div>
+
+<!-- przeróbki dokonane przez szymin22 -->
+
+	<center><a href="https://polish-real-life.pl/forumdisplay.php?fid=42"><img src="./Generator Rozporządzeń_files/ZSRRUM.gif" alt="logo um"></a>
+    <h1>Generator <a href="https://polish-real-life.pl/showthread.php?tid=38&amp;action=lastpost" target="_blank" style="color: #444; text-decoration: none;"><font size="6">Ogłoszeń</font></a> </h1></center>
+	
+    <form id="decreeForm">
+        <label for="decreeDate">data (DD.MM.RRRR):</label>
+        <input type="text" id="decreeDate" placeholder="Wpisz datę" required="">
+		
+		<label for="zjakiegostanowiska">na stanowisko czy ze stanowiska</label>
+		<select id="zjakiegostanowiska" required="">
+			<option value="na stanowisko">na stanowisko</option>
+			<option value="stanowisko">stanowisko</option>
+			<option value="ze stanowiska">ze stanowiska</option>
+		</select>
+
+        <label for="userNick">Nick Użytkownika:</label>
+        <input type="text" id="userNick" placeholder="Wpisz nick użytkownika" required="">
+
+        <label for="userProfile">Link do Profilu Użytkownika:</label>
+        <input type="url" id="userProfile" placeholder="Wklej link do profilu użytkownika" required="">
+
+        <label for="userRank">Wybierz Rangę:</label>
+        <select id="userRank" required="">
+            <option value="#00CED1">Doświadczony</option>
+            <option value="#FFD700">Premium</option>
+            <option value="#1e90ff">Supporter</option>
+            <option value="#e2e2e2">Podstawowy</option>
+            <option value="#FFDEAD">Zasłużony</option>
+        </select>
+		
+		<label for="umStanowisko">Kto pisze to ogłoszenie:</label>
+		<select id="umStanowisko" required="">
+			<option value="Prezydent">Prezydent</option>
+			<option value="Zastępca Prezydenta">Zastępca Prezydenta</option>
+			<option value="Minister">Minister</option>
+		</select>
+		
+		<label for="umNaCo">Na jakie stanowisko: </label>
+		<select id="umNaCo" required="">
+			<option value="Zastępcy Prezydenta">Zastępcy Prezydenta</option>
+			<option value="Ministra">Ministra</option>
+			<option value="Urzędnika">Urzędnika</option>
+		</select>
+			
+		<label for="coRobi">co robi: </label>
+		<select id="coRobi" required="">
+			<option value="powołany zostaje">powołany zostaje</option>
+			<option value="opuszcza">opuszcza</option>
+			<option value="odwołany zostaje">odwołany zostaje</option>
+		</select>
+
+        <div id="notification" class="notification">Ogłoszenie skopiowane!</div>
+        
+        <button type="button" onclick="generateDecree()">Generuj Ogłoszenie</button>
+        <button type="button" onclick="copyDecree()">Kopiuj Ogłoszenie</button>
+    </form>
+
+    <div id="notification" class="notification">Ogłoszenie skopiowane!</div>
+<button>
+  <a href="https://polish-real-life.pl/showthread.php?tid=38&amp;action=lastpost" target="_blank" style="color: white; text-decoration: none;">Link do Rozporządzeń</a> 
+</button>
+
+    <h2>Wygenerowane Rozporządzenie</h2>
+    <textarea id="decreeOutput" readonly=""></textarea>
+
+<script>
+function generateDecree() {
+    const date = document.getElementById('decreeDate').value;
+    const userNick = document.getElementById('userNick').value;
+    const userProfile = document.getElementById('userProfile').value;
+    const userRank = document.getElementById('userRank').value;
+    const Stanowisko = document.getElementById('umStanowisko').value;
+    const NaCo = document.getElementById('umNaCo').value;
+    const coRobi = document.getElementById('coRobi').value;
+    const zjakiegostanowiska = document.getElementById('zjakiegostanowiska').value;
+
+    // Formatowanie nicku
+    let nickFormatted = userNick;
+    if (userRank === "#1e90ff") {
+        nickFormatted = `[i]${userNick}[/i]`;
+    }
+
+    // Logika dla actionText
+    let actionText = "";
+    if(zjakiegostanowiska === "na stanowisko") {
+        actionText = `na stanowisko [b]${NaCo}[/b] ${coRobi}`;
+    } else if(zjakiegostanowiska === "stanowisko") {
+        actionText = `stanowisko [b]${NaCo}[/b] ${coRobi}`;
+    } else {
+        actionText = `ze stanowiska [b]${NaCo}[/b] ${coRobi}`;
+    }
+
+    // Generowanie treści
+    const decree = `
+[align=center][color=#ffffff]Z dniem [b]${date}[/b] roku ${actionText}[/color][url=${userProfile}][b][color=${userRank}] ${nickFormatted}[/color][/b][/url][/align]
+
+[align=right][color=#ffffff][b]Z poważaniem[/b],[/color][/align]
+[align=right][color=#ffffff]${Stanowisko} miasta Los Santos[/color][/align]`;
+
+    document.getElementById('decreeOutput').value = decree;
+	
+	
+
+}
+
+function copyDecree() {
+    const output = document.getElementById('decreeOutput');
+    output.select();
+    output.setSelectionRange(0, 99999); // Dla urządzeń mobilnych
+    
+    try {
+        navigator.clipboard.writeText(output.value);
+        showNotification();
+    } catch (err) {
+        console.error('Błąd kopiowania:', err);
+    }
+}
+
+function showNotification() {
+    const notification = document.getElementById('notification');
+    notification.classList.add('show');
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 2000);
+}
+</script>
+</script>
+
+
+
+
+</body></html>
