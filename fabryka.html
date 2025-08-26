@@ -1,46 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <title>spis fabryki</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            border: 1px solid #333;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Fabryka pojazdów</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+    table { width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+    th { background: #eee; }
+    tr:nth-child(even) { background: #fafafa; }
+  </style>
 </head>
 <body>
-
-<h2>fabryka pojazdów, nie po kolei bo mi sie nie chce</h2>
-
-<table>
-    <tr>
-        <th>Kolumna 1</th>
-        <th>Kolumna 2</th>
-        <th>Kolumna 3</th>
-        <th>Kolumna 4</th>
-    </tr>
-    <tr>
-        <td>Dane 1A</td>
-        <td>Dane 2A</td>
-        <td>Dane 3A</td>
-        <td>Dane 4A</td>
-    </tr>
-    <tr>
-        <td>Dane 1B</td>
-        <td>Dane 2B</td>
-        <td>Dane 3B</td>
-        <td>Dane 4B</td>
-    </tr>
-</table>
-
+  <h2>fabryka pojazdów, bo mazurskiemu sie nie chciało, nie po kolei bo mi sie nie chce, polecam ctrl + F ~szymin22</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Nazwa</th><th>Cena</th><th>Dozwolone</th>
+      </tr>
+    </thead>
+    <tbody>
+<tr><td>407</td><td>Firetruck</td><td>250000</td><td>Calkowity zakaz</td></tr>
+<tr><td>544</td><td>Firetruck z drabina</td><td>250000</td><td>Calkowity zakaz</td></tr>
+<tr><td>528</td><td>FBI Truck</td><td>131300</td><td>Calkowity zakaz</td></tr>
+<tr><td>601</td><td>S.W.A.T.</td><td>400000</td><td>Calkowity zakaz</td></tr>
+<tr><td>490</td><td>FBI Rancher</td><td>27500</td><td>Calkowity zakaz</td></tr>
+<tr><td>416</td><td>Ambulance</td><td>260400</td><td>Calkowity zakaz</td></tr>
+<tr><td>599</td><td>Police Ranger</td><td>22000</td><td>Calkowity zakaz</td></tr>
+<tr><td>486</td><td>Dozer</td><td>145800</td><td>Calkowity zakaz</td></tr>
+<tr><td>596</td><td>Police Car (LSPD)</td><td>116700</td><td>Calkowity zakaz</td></tr>
+<tr><td>598</td><td>Police Car (LVPD)</td><td>116700</td><td>Calkowity zakaz</td></tr>
+<tr><td>597</td><td>Police Car (SFPD)</td><td>116700</td><td>Calkowity zakaz</td></tr>
+<tr><td>582</td><td>Newsvan</td><td>150000</td><td>Calkowity zakaz</td></tr>
+<tr><td>488</td><td>San News Maverick</td><td>175000</td><td>Calkowity zakaz</td></tr>
+<tr><td>427</td><td>Enforcer</td><td>300000</td><td>Calkowity zakaz</td></tr>
+<tr><td>428</td><td>Securicar</td><td>190300</td><td>Calkowity zakaz</td></tr>
+<tr><td>523</td><td>HPV1000</td><td>27700</td><td>Calkowity zakaz</td></tr>
+<tr><td>430</td><td>Predator</td><td>280000</td><td>Calkowity zakaz</td></tr>
+<tr><td>408</td><td>Trashmaster</td><td>76900</td><td>Calkowity zakaz</td></tr>
+<tr><td>524</td><td>Cement Truck</td><td>104200</td><td>Calkowity zakaz</td></tr>
+<tr><td>423</td><td>Mr Whoopee</td><td>76100</td><td>Calkowity zakaz</td></tr>
+<tr><td>470</td><td>Patriot</td><td>170500</td><td>Calkowity zakaz</td></tr>
+<tr><td>588</td><td>Hotdog</td><td>68300</td><td>Calkowity zakaz</td></tr>
+<tr><td>532</td><td>Combine Harvester</td><td>64200</td><td>Calkowity zakaz</td></tr>
+<tr><td>442</td><td>Romero</td><td>22500</td><td>Calkowity zakaz</td></tr>
+<tr><td>438</td><td>Cabbie</td><td>11800</td><td>Calkowity zakaz</td></tr>
+<tr><td>420</td><td>Taxi</td><td>11800</td><td>Calkowity zakaz</td></tr>
+<tr><td>497</td><td>Police Maverick</td><td>270000</td><td>Calkowity zakaz</td></tr>
+<tr><td>432</td><td>Rhino</td><td>26000000</td><td>Calkowity zakaz</td></tr>
+<tr><td>522</td><td>NRG-500</td><td>54800</td><td>Tak</td></tr>
+<tr><td>462</td><td>Faggio</td><td>350</td><td>Tak</td></tr>
+<tr><td>448</td><td>Pizzaboy</td><td>450</td><td>Nie</td></tr>
+<tr><td>468</td><td>Sanchez</td><td>18900</td><td>Tak</td></tr>
+<tr><td>586</td><td>Wayfarer</td><td>18500</td><td>Tak</td></tr>
+<tr><td>461</td><td>PCJ-600</td><td>38800</td><td>Tak</td></tr>
+<tr><td>463</td><td>Freeway</td><td>30100</td><td>Tak</td></tr>
+<tr><td>581</td><td>BF-400</td><td>34000</td><td>Tak</td></tr>
+<tr><td>521</td><td>FCR-900</td><td>48700</td><td>Tak</td></tr>
+<tr><td>471</td><td>Quad</td><td>13300</td><td>Tak</td></tr>
+<tr><td>509</td><td>Bike</td><td>300</td><td>Nie</td></tr>
+<tr><td>510</td><td>Mountain Bike</td><td>500</td><td>Nie</td></tr>
+<tr><td>481</td><td>BMX</td><td>500</td><td>Nie</td></tr>
+<tr><td>418</td><td>Moonbeam</td><td>4700</td><td>Tak</td></tr>
+<tr><td>585</td><td>Emperor</td><td>21800</td><td>Tak</td></tr>
+<tr><td>492</td><td>Greenwood</td><td>17500</td><td>Tak</td></tr>
+<tr><td>580</td><td>Stafford</td><td>16300</td><td>Tak</td></tr>
+<tr><td>551</td><td>Merit</td><td>21300</td><td>Tak</td></tr>
+<tr><td>466</td><td>Glendale</td><td>10900</td><td>Tak</td></tr>
+<tr><td>405</td><td>Sentinel</td><td>26700</td><td>Tak</td></tr>
+<tr><td>546</td><td>Intruder</td><td>18300</td><td>Tak</td></tr>
+<tr><td>421</td><td>Washington</td><td>23300</td><td>Tak</td></tr>
+<tr><td>566</td><td>Tahoma</td><td>25200</td><td>Tak</td></tr>
+<tr><td>507</td><td>Elegant</td><td>33400</td><td>Tak</td></tr>
+<tr><td>529</td><td>Willard</td><td>23800</td><td>Tak</td></tr>
+<tr><td>426</td><td>Premier</td><td>29900</td><td>Tak</td></tr>
+<tr><td>550</td><td>Sunrise</td><td>34400</td><td>Tak</td></tr>
+<tr><td>445</td><td>Admiral</td><td>6300</td><td>Tak</td></tr>
+<tr><td>516</td><td>Nebula</td><td>16000</td><td>Tak</td></tr>
+<tr><td>467</td><td>Oceanic</td><td>9400</td><td>Tak</td></tr>
+<tr><td>458</td><td>Solair</td><td>10200</td><td>Tak</td></tr>
+<tr><td>540</td><td>Vincent</td><td>33300</td><td>Tak</td></tr>
+<tr><td>404</td><td>Perennial</td><td>3800</td><td>Tak</td></tr>
+<tr><td>409</td><td>Stretch</td><td>21400</td><td>Tak</td></tr>
+<tr><td>479</td><td>Regina</td><td>7700</td><td>Tak</td></tr>
+<tr><td>561</td><td>Stratum</td><td>23100</td><td>Tak</td></tr>
+<tr><td>567</td><td>Savanna</td><td>24000</td><td>Tak</td></tr>
+<tr><td>547</td><td>Primo</td><td>23800</td><td>Tak</td></tr>
+<tr><td>491</td><td>Virgo</td><td>8800</td><td>Tak</td></tr>
+<tr><td>410</td><td>Manana</td><td>1500</td><td>Tak</td></tr>
+<tr><td>436</td><td>Previon</td><td>5000</td><td>Tak</td></tr>
+<tr><td>401</td><td>Bravura</td><td>6800</td><td>Tak</td></tr>
+<tr><td>545</td><td>Hustler</td><td>8800</td><td>Tak</td></tr>
+<tr><td>549</td><td>Tampa</td><td>3800</td><td>Tak</td></tr>
+<tr><td>517</td><td>Majestic</td><td>10000</td><td>Tak</td></tr>
+<tr><td>576</td><td>Tornado</td><td>17500</td><td>Tak</td></tr>
+<tr><td>439</td><td>Stallion</td><td>6300</td><td>Tak</td></tr>
+<tr><td>527</td><td>Cadrona</td><td>9500</td><td>Tak</td></tr>
+<tr><td>518</td><td>Buccaneer</td><td>16900</td><td>Tak</td></tr>
+<tr><td>412</td><td>Voodoo</td><td>15900</td><td>Tak</td></tr>
+<tr><td>533</td><td>Feltzer</td><td>23000</td><td>Tak</td></tr>
+<tr><td>575</td><td>Broadway</td><td>10800</td><td>Tak</td></tr>
+<tr><td>536</td><td>Blade</td><td>17200</td><td>Tak</td></tr>
+<tr><td>419</td><td>Esperanto</td><td>9500</td><td>Tak</td></tr>
+<tr><td>535</td><td>Slamvan</td><td>19900</td><td>Tak</td></tr>
+<tr><td>496</td><td>Blista Compact</td><td>25500</td><td>Tak</td></tr>
+<tr><td>474</td><td>Hermes</td><td>10900</td><td>Tak</td></tr>
+<tr><td>526</td><td>Fortune</td><td>27200</td><td>Tak</td></tr>
+<tr><td>542</td><td>Clover</td><td>4200</td><td>Tak</td></tr>
+<tr><td>475</td><td>Sabre</td><td>23400</td><td>Tak</td></tr>
+<tr><td>534</td><td>Remington</td><td>10400</td><td>Tak</td></tr>
+<tr><td>483</td><td>Camper</td><td>13500</td><td>Tak</td></tr>
+<tr><td>558</td><td>Uranus</td><td>13500</td><td>Tak</td></tr>
+<tr><td>555</td><td>Windsor</td><td>12500</td><td>Tak</td></tr>
+<tr><td>541</td><td>Bullet</td><td>121000</td><td>Tak</td></tr>
+<tr><td>429</td><td>Banshee</td><td>147800</td><td>Tak</td></tr>
+<tr><td>411</td><td>Infernus</td><td>138600</td><td>Tak</td></tr>
+<tr><td>560</td><td>Sultan</td><td>140100</td><td>Tak</td></tr>
+<tr><td>506</td><td>Super GT</td><td>122100</td><td>Tak</td></tr>
+<tr><td>505</td><td>Charger</td><td>119300</td><td>Tak</td></tr>
+<tr><td>603</td><td>Phoenix</td><td>31400</td><td>Tak</td></tr>
+<tr><td>587</td><td>Euros</td><td>76400</td><td>Tak</td></tr>
+<tr><td>602</td><td>Alpha</td><td>120100</td><td>Tak</td></tr>
+<tr><td>562</td><td>Elegy</td><td>117600</td><td>Tak</td></tr>
+<tr><td>559</td><td>Jester</td><td>118100</td><td>Tak</td></tr>
+<tr><td>480</td><td>Comet</td><td>79400</td><td>Tak</td></tr>
+<tr><td>402</td><td>Buffalo</td><td>109600</td><td>Tak</td></tr>
+<tr><td>415</td><td>Cheetah</td><td>104200</td><td>Tak</td></tr>
+<tr><td>477</td><td>ZR-350</td><td>130500</td><td>Tak</td></tr>
+<tr><td>565</td><td>Flash</td><td>91400</td><td>Tak</td></tr>
+<tr><td>451</td><td>Turismo</td><td>169300</td><td>Tak</td></tr>
+<tr><td>478</td><td>Walton</td><td>1300</td><td>Tak</td></tr>
+<tr><td>422</td><td>Bobcat</td><td>13700</td><td>Tak</td></tr>
+<tr><td>600</td><td>Picador</td><td>14800</td><td>Tak</td></tr>
+<tr><td>554</td><td>Yosemite</td><td>20400</td><td>Tak</td></tr>
+<tr><td>543</td><td>Sadler</td><td>5200</td><td>Tak</td></tr>
+<tr><td>500</td><td>Mesa</td><td>7500</td><td>Tak</td></tr>
+<tr><td>400</td><td>Landstalker</td><td>12300</td><td>Tak</td></tr>
+<tr><td>579</td><td>Huntley</td><td>8000</td><td>Tak</td></tr>
+<tr><td>495</td><td>Sandking</td><td>35100</td><td>Tak</td></tr>
+<tr><td>489</td><td>Rancher</td><td>19600</td><td>Tak</td></tr>
+<tr><td>446</td><td>Squallo</td><td>320000</td><td>Nie</td></tr>
+<tr><td>452</td><td>Speeder</td><td>170000</td><td>Nie</td></tr>
+<tr><td>493</td><td>Jetmax</td><td>208000</td><td>Nie</td></tr>
+<tr><td>484</td><td>Marquis</td><td>300000</td><td>Nie</td></tr>
+<tr><td>472</td><td>Coastguard</td><td>150000</td><td>Nie</td></tr>
+<tr><td>454</td><td>Tropic</td><td>700000</td><td>Nie</td></tr>
+<tr><td>453</td><td>Reefer</td><td>150000</td><td>Nie</td></tr>
+<tr><td>473</td><td>Dinghy</td><td>45000</td><td>Nie</td></tr>
+<tr><td>595</td><td>Launch</td><td>110000</td><td>Calkowity zakaz</td></tr>
+<tr><td>519</td><td>Shamal</td><td>1569000</td><td>Tak</td></tr>
+<tr><td>460</td><td>Skimmer</td><td>147000</td><td>Tak</td></tr>
+<tr><td>511</td><td>Beagle</td><td>162000</td><td>Tak</td></tr>
+<tr><td>512</td><td>Cropduster</td><td>160000</td><td>Tak</td></tr>
+<tr><td>513</td><td>Stuntplane</td><td>204000</td><td>Tak</td></tr>
+<tr><td>476</td><td>Rustler</td><td>235000</td><td>Tak</td></tr>
+<tr><td>593</td><td>Dodo</td><td>135000</td><td>Tak</td></tr>
+<tr><td>553</td><td>Nevada</td><td>3000000</td><td>Calkowity zakaz</td></tr>
+<tr><td>520</td><td>Hydra</td><td>25000000</td><td>Calkowity zakaz</td></tr>
+<tr><td>577</td><td>AT-400</td><td>15000000</td><td>Calkowity zakaz</td></tr>
+<tr><td>592</td><td>Andromada</td><td>10000000</td><td>Calkowity zakaz</td></tr>
+<tr><td>548</td><td>Cargobob</td><td>254000</td><td>Nie</td></tr>
+<tr><td>417</td><td>Leviathan</td><td>215000</td><td>Nie</td></tr>
+<tr><td>447</td><td>Seasparrow</td><td>146000</td><td>Nie</td></tr>
+<tr><td>563</td><td>Raidance</td><td>136000</td><td>Nie</td></tr>
+<tr><td>469</td><td>Sparrow</td><td>100000</td><td>Nie</td></tr>
+<tr><td>487</td><td>Maverick</td><td>260000</td><td>Nie</td></tr>
+<tr><td>425</td><td>Hunter</td><td>15000000</td><td>Calkowity zakaz</td></tr>
+<tr><td>583</td><td>Tug</td><td>3300</td><td>Calkowity zakaz</td></tr>
+<tr><td>572</td><td>Mower</td><td>4500</td><td>Tak</td></tr>
+<tr><td>606</td><td>Baggage Trailer A</td><td>2000</td><td>Calkowity zakaz</td></tr>
+<tr><td>607</td><td>Baggage Trailer B</td><td>2000</td><td>Calkowity zakaz</td></tr>
+<tr><td>574</td><td>Sweeper</td><td>7500</td><td>Calkowity zakaz</td></tr>
+<tr><td>531</td><td>Tractor</td><td>12000</td><td>Tak</td></tr>
+<tr><td>530</td><td>Forklift</td><td>8000</td><td>Tak</td></tr>
+<tr><td>485</td><td>Baggage</td><td>5000</td><td>Calkowity zakaz</td></tr>
+<tr><td>570</td><td>Streak Train Trailer</td><td>500000</td><td>Calkowity zakaz</td></tr>
+<tr><td>444</td><td>Monster</td><td>250000</td><td>Calkowity zakaz</td></tr>
+<tr><td>556</td><td>Monster A</td><td>250000</td><td>Calkowity zakaz</td></tr>
+<tr><td>557</td><td>Monster B</td><td>250000</td><td>Calkowity zakaz</td></tr>
+<tr><td>494</td><td>Hotring Racer A</td><td>150000</td><td>Calkowity zakaz</td></tr>
+<tr><td>502</td><td>Hotring Racer B</td><td>150000</td><td>Calkowity zakaz</td></tr>
+<tr><td>503</td><td>Diablo</td><td>350000</td><td>Calkowity zakaz</td></tr>
+<tr><td>539</td><td>Vortex</td><td>60000</td><td>Calkowity zakaz</td></tr>
+<tr><td>433</td><td>Barracks</td><td>150000</td><td>Calkowity zakaz</td></tr>
+<tr><td>406</td><td>Dumper</td><td>2400000</td><td>Calkowity zakaz</td></tr>
+<tr><td>434</td><td>Hotknife</td><td>45000</td><td>Tak</td></tr>
+<tr><td>568</td><td>Bandito</td><td>32400</td><td>Tak</td></tr>
+<tr><td>508</td><td>Journey</td><td>48800</td><td>Tak</td></tr>
+<tr><td>424</td><td>BF Injection</td><td>32700</td><td>Tak</td></tr>
+<tr><td>457</td><td>Caddy</td><td>4900</td><td>Tak</td></tr>
+<tr><td>482</td><td>Burrito</td><td>25500</td><td>Tak</td></tr>
+<tr><td>440</td><td>Rumpo</td><td>26300</td><td>Tak</td></tr>
+<tr><td>413</td><td>Pony</td><td>18800</td><td>Tak</td></tr>
+<tr><td>459</td><td>Berkleys RC Van</td><td>26300</td><td>Calkowity zakaz</td></tr>
+<tr><td>609</td><td>Boxville - do kradniecia</td><td>12800</td><td>Calkowity zakaz</td></tr>
+<tr><td>498</td><td>Boxville</td><td>12800</td><td>Tak</td></tr>
+<tr><td>525</td><td>Towtruck</td><td>36500</td><td>Nie</td></tr>
+<tr><td>552</td><td>Utility Van</td><td>33500</td><td>Calkowity zakaz</td></tr>
+<tr><td>578</td><td>DFT-30</td><td>16800</td><td>Tak</td></tr>
+<tr><td>455</td><td>Flatbed</td><td>58800</td><td>Calkowity zakaz</td></tr>
+<tr><td>443</td><td>Packer</td><td>42000</td><td>Tak</td></tr>
+<tr><td>573</td><td>Dune</td><td>132500</td><td>Nie</td></tr>
+<tr><td>437</td><td>Coach</td><td>62300</td><td>Tak</td></tr>
+<tr><td>431</td><td>Bus</td><td>40300</td><td>Tak</td></tr>
+<tr><td>499</td><td>Benson</td><td>22400</td><td>Tak</td></tr>
+<tr><td>414</td><td>Mule</td><td>19200</td><td>Tak</td></tr>
+<tr><td>456</td><td>Yankee</td><td>17500</td><td>Tak</td></tr>
+<tr><td>515</td><td>Roadtrain</td><td>115900</td><td>Nie</td></tr>
+<tr><td>403</td><td>Linerunner</td><td>73400</td><td>Nie</td></tr>
+<tr><td>514</td><td>Tanker</td><td>84400</td><td>Nie</td></tr>
+<tr><td>589</td><td>Club</td><td>17000</td><td>Tak</td></tr>
+<tr><td>571</td><td>Kart</td><td>20000</td><td>Calkowity zakaz</td></tr>
+<tr><td>571</td><td>Kart</td><td>20000</td><td>Calkowity zakaz</td></tr>
+    </tbody>
+  </table>
 </body>
 </html>
